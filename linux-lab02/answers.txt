@@ -1,0 +1,109 @@
+--------------------------------------------------------------------------------
+    LAB 02                                       Advanced Command Line Usage    
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab02 in this file.
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Managing Processes
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1
+------------------
+
+A)  2.91, 2.65, 2.15
+
+
+B) 1
+
+
+C) top -u username
+------------------
+    QUESTION 2 
+------------------
+It starts a process in background and therefore terminal is free to be used.
+
+
+------------------
+    QUESTION 3 
+------------------
+
+ ps -A | wc -l
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Variables and the Path Variable
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 4 
+------------------
+
+Someone can cd in the user's directory and run malicious scripts there.
+    
+------------------
+    QUESTION 5 
+------------------
+
+A=Apple
+B=Ball
+C=Cat
+
+A)  Apple
+
+B)  AppleBall
+
+C)  nothing is printed
+
+D)  nothing is printed
+
+E)  Catat
+
+F)  
+“Apple Ball Cat”
+
+
+G)  $A $B $C
+
+
+H)  $A
+
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Pipes and Redirection 
+--------------------------------------------------------------------------------
+    
+------------------
+    QUESTION 6 
+------------------
+Because it filters the adjacent matching lines out and if the data is not sorted matching lines might not be next to each other.
+    
+------------------
+    QUESTION 7 
+------------------
+
+A)  grep  searches the named input files for lines containing a match to  the  given  pattern and prints the matching lines.
+
+
+B)  grep -w "Chapter" ./linux-lab02/extras/Bash-Beginners-Guide.txt
+
+
+    
+------------------
+    QUESTION 8 
+------------------
+Sort bash history, filter out the matching lines and count the number of occurencies for each unique line (prefix line with the number of occurencies), sort according to numerical value, take last 10 lines and write them to the file commands.txt
+   
+    
+-------------------
+    QUESTION 9 
+-------------------
+>  redirects stdout to a file and overwrites it
+>>  redirects stdout to a file and appends stdout with that file
+
+--------------------------------------------------------------------------------
+    FINISHED LAB 02                                             MARKS: XX/XX    
+--------------------------------------------------------------------------------

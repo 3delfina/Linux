@@ -1,0 +1,143 @@
+--------------------------------------------------------------------------------
+    LAB 01                               An introduction to the command line    
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab01 in this file.
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Files and Directories
+--------------------------------------------------------------------------------
+aaaa
+------------------
+    QUESTION 1
+------------------
+
+experiments:
+exp1
+
+experiments/exp1:
+data  docs  results
+
+experiments/exp1/data:
+10.data  16.data  21.data  27.data  32.data  38.data  43.data  49.data	7.data
+11.data  17.data  22.data  28.data  33.data  39.data  44.data  4.data	8.data
+12.data  18.data  23.data  29.data  34.data  3.data   45.data  50.data	9.data
+13.data  19.data  24.data  2.data   35.data  40.data  46.data  5.data
+14.data  1.data   25.data  30.data  36.data  41.data  47.data  5s
+15.data  20.data  26.data  31.data  37.data  42.data  48.data  6.data
+
+experiments/exp1/data/5s:
+15.data  25.data  35.data  45.data  50.data  5.data
+
+experiments/exp1/docs:
+
+experiments/exp1/results:
+
+------------------
+    QUESTION 2 
+------------------
+cp -R experiment experiments/exp1
+    
+------------------
+    QUESTION 3
+------------------
+Because the directory was not empty.
+    
+------------------
+    QUESTION 4
+------------------
+rm -r experiment
+    
+------------------
+    QUESTION 5
+------------------
+
+A) ls -R lists subdirectories recursively;
+   ls -r reverses order while sorting
+
+B) ls -a does not ignore entries starting with .
+
+
+C) Name of a hidden file starts with . 
+
+D) .PhysicsIsFun
+	
+    
+------------------
+    QUESTION 6
+------------------
+
+A) . refers to the current directory
+    .. refers to the directory above this one in the hierarchy
+
+B)  ls -A
+   
+------------------
+    QUESTION 7 
+------------------
+
+A)  ls -lS
+    
+B) ls -lt
+  
+-------------------
+    QUESTION 8 
+-------------------
+
+A) cd ../..
+
+B) cd /home/2232817m/experiments
+    
+-------------------
+    QUESTION 9 
+-------------------
+    
+A) less -N generate.sh
+    
+B)   exit 1
+    
+-------------------
+    QUESTION 10
+-------------------
+
+A) 10 lines
+
+B) head -5 generate.sh (or any other filename)
+
+C) wc -l generate.sh  (or any other filename)
+ 
+
+--------------------------------------------------------------------------------
+    QUESTIONS - File Permissions
+--------------------------------------------------------------------------------
+
+-------------------
+    QUESTION 11
+-------------------
+
+
+A) User can read and write, group can read and write and everyone on the system can execute.
+  
+B)  chmod u+x,g-w,o-x
+    
+-------------------
+    QUESTION 12
+-------------------
+ A permission starts with the symbol representing the filetype, so it would be a character 'd'.
+    
+-------------------
+    QUESTION 13
+-------------------
+
+A) use the command rm -i
+
+B)   rm -f <filename> 
+
+-------------------
+    QUESTION 14
+-------------------
+Sssshhh, it's a secret :)
+
+--------------------------------------------------------------------------------
+    FINISHED LAB 01                                             MARKS: XX/XX    
+--------------------------------------------------------------------------------

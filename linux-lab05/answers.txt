@@ -1,0 +1,212 @@
+--------------------------------------------------------------------------------
+    LAB 05                                  GNU Make and Regular Expressions
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab05 in this file. Questions or tasks which 
+    require you to edit another file have the name of the file already 
+    entered for you.
+
+--------------------------------------------------------------------------------
+    QUESTIONS
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1 
+------------------
+
+A)  git clone https://bitbucket.org/glaphysp2t/lab5-example.git
+  git init <directory>
+
+B) git log --oneline
+   A simple program that prints out an ASCII histogram based on a test set of integer data
+
+C) added to README.md
+  The code makes histogram.o draw.o util.o if they don't exist in order to create a histogram which is printed when we do "make test".
+  histogram.o draw.o util.o and the histogram are removed when we do "make clean"
+
+D)
+
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#       modified:   README.md
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+    
+E) git add README.md
+  git commit -m "Modified README.md"
+
+commit 48f7b23d5c06a1754c4d405a673b434f0158c2f8
+Author: Marija Mumm <2232817m@brutha.physics.gla.ac.uk>
+Date:   Mon Feb 26 16:10:44 2018 +0000
+
+    Modified README.md
+
+commit 8fbd35f49df21f5b607e6f8a309cb15dd4973c2e
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 13:51:56 2015 +0000
+
+    Refactored to move utility code out of the main file
+
+commit e532f4f3fa59f94af33023fae79d96473401b4e7
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 13:47:05 2015 +0000
+
+    Added randomly generated data
+
+commit 6dcdfe5314898e12473a2e6faaf43bd87c43eba5
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 12:07:38 2015 +0000
+
+    Refactored code so that the drawing routines are in their own file, added to the makefile
+
+commit 6b4875c6918b32431e00dc7cdb4c3f273dc27a8a
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 12:01:27 2015 +0000
+
+    Added a simple makefile to build histogram, included a make test which runs the program
+
+commit 8b2c746e307057182d9a061a88e8ba724a44ee52
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:42:37 2015 +0000
+
+    Added a function that calculates the maximum of a list of data and returns it's value
+
+commit 66ee505a5d2ac63ee522ae680804e74ef77fc13d
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:16:32 2015 +0000
+
+    Added in a simple axis to the histogram
+
+commit c49694194e8261a314315d7adec7d8e2e73eb749
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:06:46 2015 +0000
+
+    Refactored to create a printBar function
+
+commit 2a65f6231f817f7ccf4802fba6be20a27733da80
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:02:33 2015 +0000
+
+    A simple program that prints out an ASCII histogram based on a test set of integer data
+
+commit d71c39bc76d10bb5d6b1d1d62f27bd34fae740b5
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 10:43:48 2015 +0000
+
+    Added an initial README to the project
+
+F) git branch myfeature
+  
+
+G) git checkout myfeature
+
+The output of git branch --list is:
+  master
+* myfeature
+
+
+H) commit a097db3662be81f41c50b267189464b6bb159f08
+Author: Marija Mumm <2232817m@brutha.physics.gla.ac.uk>
+Date:   Mon Feb 26 16:25:32 2018 +0000
+
+    Modified README.md again
+
+commit 48f7b23d5c06a1754c4d405a673b434f0158c2f8
+Author: Marija Mumm <2232817m@brutha.physics.gla.ac.uk>
+Date:   Mon Feb 26 16:10:44 2018 +0000
+
+    Modified README.md
+
+commit 8fbd35f49df21f5b607e6f8a309cb15dd4973c2e
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 13:51:56 2015 +0000
+
+    Refactored to move utility code out of the main file
+
+commit e532f4f3fa59f94af33023fae79d96473401b4e7
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 13:47:05 2015 +0000
+
+    Added randomly generated data
+
+commit 6dcdfe5314898e12473a2e6faaf43bd87c43eba5
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 12:07:38 2015 +0000
+
+    Refactored code so that the drawing routines are in their own file, added to the makefile
+
+commit 6b4875c6918b32431e00dc7cdb4c3f273dc27a8a
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 12:01:27 2015 +0000
+
+    Added a simple makefile to build histogram, included a make test which runs the program
+
+commit 8b2c746e307057182d9a061a88e8ba724a44ee52
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:42:37 2015 +0000
+
+    Added a function that calculates the maximum of a list of data and returns it's value
+
+commit 66ee505a5d2ac63ee522ae680804e74ef77fc13d
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:16:32 2015 +0000
+
+    Added in a simple axis to the histogram
+
+commit c49694194e8261a314315d7adec7d8e2e73eb749
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:06:46 2015 +0000
+
+    Refactored to create a printBar function
+
+commit 2a65f6231f817f7ccf4802fba6be20a27733da80
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 11:02:33 2015 +0000
+
+    A simple program that prints out an ASCII histogram based on a test set of integer data
+
+commit d71c39bc76d10bb5d6b1d1d62f27bd34fae740b5
+Author: Gareth Roy <gareth.roy@gmail.com>
+Date:   Thu Jan 8 10:43:48 2015 +0000
+
+    Added an initial README to the project
+
+
+------------------
+    QUESTION 2
+------------------
+
+A) $@ is the name of the target
+
+B) $^ is the list of prerequisites for the target you
+are compiling
+
+C) $< is the name of the first prerequisite
+
+D) $? is the list of prerequisites that are newer
+than the target and therefore must be compiled first
+
+------------------
+    QUESTION 3
+------------------
+
+A) Submit modified Makefile
+
+B) Submit modified Makefile
+
+C) Submit modified C & H files
+
+D) Submit sim.data
+
+E) Submit graph image
+    
+F) Added -lm flag to link math library as there was an undefined reference to `sqrt'.
+It is required in  simulation.c function `rel_mass'.
+    
+G) I would create targets that would modify the flags passed to the build step in order to set 
+different compiler options, I would also use variables in order to make all changes consistent.
+    
